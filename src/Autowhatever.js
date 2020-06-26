@@ -387,6 +387,7 @@ export default class Autowhatever extends Component {
       role: 'combobox',
       'aria-haspopup': 'listbox',
       'aria-owns': itemsContainerId,
+      'aria-controls': itemsContainerId,
       'aria-expanded': isOpen,
       ...theme(
         `react-autowhatever-${id}-container`,
