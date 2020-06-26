@@ -698,7 +698,7 @@ var Autowhatever = /*#__PURE__*/ (function (_Component) {
               'aria-haspopup': 'listbox',
               'aria-owns': itemsContainerId,
               'aria-controls': itemsContainerId,
-              'aria-expanded': isOpen,
+              'aria-expanded': isOpen || 'false',
             },
             theme(
               'react-autowhatever-'.concat(id, '-container'),

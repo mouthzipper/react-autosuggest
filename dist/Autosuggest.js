@@ -824,6 +824,7 @@ var Autosuggest = /*#__PURE__*/ (function (_Component) {
           theme = _this$props6.theme,
           getSuggestionValue = _this$props6.getSuggestionValue,
           alwaysRenderSuggestions = _this$props6.alwaysRenderSuggestions,
+          ariaLabel = _this$props6.ariaLabel,
           highlightFirstSuggestion = _this$props6.highlightFirstSuggestion;
         var _this$state2 = this.state,
           isFocused = _this$state2.isFocused,
@@ -1089,6 +1090,7 @@ var Autosuggest = /*#__PURE__*/ (function (_Component) {
             itemProps: this.itemProps,
             theme: (0, _theme.mapToAutowhateverTheme)(theme),
             id: id,
+            ariaLabel: ariaLabel,
             ref: this.storeAutowhateverRef,
           }
         );
@@ -1177,6 +1179,7 @@ _defineProperty(Autosuggest, 'propTypes', {
   focusInputOnSuggestionClick: _propTypes['default'].bool,
   highlightFirstSuggestion: _propTypes['default'].bool,
   theme: _propTypes['default'].object,
+  ariaLabel: _propTypes['default'].string,
   id: _propTypes['default'].string,
 });
 
@@ -1188,5 +1191,6 @@ _defineProperty(Autosuggest, 'defaultProps', {
   focusInputOnSuggestionClick: true,
   highlightFirstSuggestion: false,
   theme: _theme.defaultTheme,
+  ariaLabel: 'search',
   id: '1',
 });

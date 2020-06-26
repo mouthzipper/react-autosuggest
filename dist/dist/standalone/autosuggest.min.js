@@ -9,16 +9,16 @@
 })(window, function (e) {
   return (function (e) {
     var t = {};
-    function n(o) {
-      if (t[o]) return t[o].exports;
-      var r = (t[o] = { i: o, l: !1, exports: {} });
-      return e[o].call(r.exports, r, r.exports, n), (r.l = !0), r.exports;
+    function n(r) {
+      if (t[r]) return t[r].exports;
+      var o = (t[r] = { i: r, l: !1, exports: {} });
+      return e[r].call(o.exports, o, o.exports, n), (o.l = !0), o.exports;
     }
     return (
       (n.m = e),
       (n.c = t),
-      (n.d = function (e, t, o) {
-        n.o(e, t) || Object.defineProperty(e, t, { enumerable: !0, get: o });
+      (n.d = function (e, t, r) {
+        n.o(e, t) || Object.defineProperty(e, t, { enumerable: !0, get: r });
       }),
       (n.r = function (e) {
         'undefined' != typeof Symbol &&
@@ -29,21 +29,21 @@
       (n.t = function (e, t) {
         if ((1 & t && (e = n(e)), 8 & t)) return e;
         if (4 & t && 'object' == typeof e && e && e.__esModule) return e;
-        var o = Object.create(null);
+        var r = Object.create(null);
         if (
-          (n.r(o),
-          Object.defineProperty(o, 'default', { enumerable: !0, value: e }),
+          (n.r(r),
+          Object.defineProperty(r, 'default', { enumerable: !0, value: e }),
           2 & t && 'string' != typeof e)
         )
-          for (var r in e)
+          for (var o in e)
             n.d(
-              o,
               r,
+              o,
               function (t) {
                 return e[t];
-              }.bind(null, r)
+              }.bind(null, o)
             );
-        return o;
+        return r;
       }),
       (n.n = function (e) {
         var t =
@@ -76,34 +76,34 @@
         if (!e || !t) return !1;
         var n = e.length;
         if (t.length !== n) return !1;
-        for (var o = 0; o < n; o++) if (e[o] !== t[o]) return !1;
+        for (var r = 0; r < n; r++) if (e[r] !== t[r]) return !1;
         return !0;
       };
     },
     function (e, t, n) {
       'use strict';
-      var o = function (e, t) {
+      var r = function (e, t) {
         if (Array.isArray(e)) return e;
         if (Symbol.iterator in Object(e))
           return (function (e, t) {
             var n = [],
-              o = !0,
-              r = !1,
+              r = !0,
+              o = !1,
               i = void 0;
             try {
               for (
                 var u, s = e[Symbol.iterator]();
-                !(o = (u = s.next()).done) &&
+                !(r = (u = s.next()).done) &&
                 (n.push(u.value), !t || n.length !== t);
-                o = !0
+                r = !0
               );
             } catch (e) {
-              (r = !0), (i = e);
+              (o = !0), (i = e);
             } finally {
               try {
-                !o && s.return && s.return();
+                !r && s.return && s.return();
               } finally {
-                if (r) throw i;
+                if (o) throw i;
               }
             }
             return n;
@@ -115,10 +115,10 @@
       e.exports = function (e) {
         var t = e.data,
           n = e.multiSection;
-        function r(e) {
-          var r = o(e, 2),
-            i = r[0],
-            u = r[1];
+        function o(e) {
+          var o = r(e, 2),
+            i = o[0],
+            u = o[1];
           return n
             ? null === u || u === t[i] - 1
               ? null ===
@@ -137,11 +137,11 @@
             : [null, u + 1];
         }
         return {
-          next: r,
+          next: o,
           prev: function (e) {
-            var r = o(e, 2),
-              i = r[0],
-              u = r[1];
+            var o = r(e, 2),
+              i = o[0],
+              u = o[1];
             return n
               ? null === u || 0 === u
                 ? null ===
@@ -164,7 +164,7 @@
               : [null, u - 1];
           },
           isLast: function (e) {
-            return null === r(e)[1];
+            return null === o(e)[1];
           },
         };
       };
@@ -172,28 +172,28 @@
     function (e, t, n) {
       'use strict';
       Object.defineProperty(t, '__esModule', { value: !0 });
-      var o = function (e, t) {
+      var r = function (e, t) {
         if (Array.isArray(e)) return e;
         if (Symbol.iterator in Object(e))
           return (function (e, t) {
             var n = [],
-              o = !0,
-              r = !1,
+              r = !0,
+              o = !1,
               i = void 0;
             try {
               for (
                 var u, s = e[Symbol.iterator]();
-                !(o = (u = s.next()).done) &&
+                !(r = (u = s.next()).done) &&
                 (n.push(u.value), !t || n.length !== t);
-                o = !0
+                r = !0
               );
             } catch (e) {
-              (r = !0), (i = e);
+              (o = !0), (i = e);
             } finally {
               try {
-                !o && s.return && s.return();
+                !r && s.return && s.return();
               } finally {
-                if (r) throw i;
+                if (o) throw i;
               }
             }
             return n;
@@ -202,7 +202,7 @@
           'Invalid attempt to destructure non-iterable instance'
         );
       };
-      function r(e) {
+      function o(e) {
         if (Array.isArray(e)) {
           for (var t = 0, n = Array(e.length); t < e.length; t++) n[t] = e[t];
           return n;
@@ -217,24 +217,24 @@
         };
       (t.default = function (e) {
         var t = Array.isArray(e) && 2 === e.length ? e : [e, null],
-          n = o(t, 2),
+          n = r(t, 2),
           i = n[0],
           u = n[1];
         return function (e) {
           for (
-            var t = arguments.length, n = Array(t > 1 ? t - 1 : 0), o = 1;
-            o < t;
-            o++
+            var t = arguments.length, n = Array(t > 1 ? t - 1 : 0), r = 1;
+            r < t;
+            r++
           )
-            n[o - 1] = arguments[o];
+            n[r - 1] = arguments[r];
           var a = n
             .map(function (e) {
               return i[e];
             })
             .filter(c);
           return 'string' == typeof a[0] || 'function' == typeof u
-            ? { key: e, className: u ? u.apply(void 0, r(a)) : a.join(' ') }
-            : { key: e, style: s.default.apply(void 0, [{}].concat(r(a))) };
+            ? { key: e, className: u ? u.apply(void 0, o(a)) : a.join(' ') }
+            : { key: e, style: s.default.apply(void 0, [{}].concat(o(a))) };
         };
       }),
         (e.exports = t.default);
@@ -244,13 +244,13 @@
     },
     function (e, t, n) {
       'use strict';
-      var o = n(7);
-      function r() {}
+      var r = n(7);
+      function o() {}
       function i() {}
-      (i.resetWarningCache = r),
+      (i.resetWarningCache = o),
         (e.exports = function () {
-          function e(e, t, n, r, i, u) {
-            if (u !== o) {
+          function e(e, t, n, o, i, u) {
+            if (u !== r) {
               var s = new Error(
                 'Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types'
               );
@@ -281,7 +281,7 @@
             shape: t,
             exact: t,
             checkPropTypes: i,
-            resetWarningCache: r,
+            resetWarningCache: o,
           };
           return (n.PropTypes = n), n;
         });
@@ -292,8 +292,8 @@
     },
     function (e, t, n) {
       'use strict';
-      var o = Object.prototype.propertyIsEnumerable;
-      function r(e) {
+      var r = Object.prototype.propertyIsEnumerable;
+      function o(e) {
         if (null == e)
           throw new TypeError(
             'Object.assign cannot be called with null or undefined'
@@ -306,16 +306,16 @@
           Object.getOwnPropertySymbols &&
             (t = t.concat(Object.getOwnPropertySymbols(e))),
           t.filter(function (t) {
-            return o.call(e, t);
+            return r.call(e, t);
           })
         );
       }
       e.exports =
         Object.assign ||
         function (e, t) {
-          for (var n, o, u = r(e), s = 1; s < arguments.length; s++) {
-            (n = arguments[s]), (o = i(Object(n)));
-            for (var c = 0; c < o.length; c++) u[o[c]] = n[o[c]];
+          for (var n, r, u = o(e), s = 1; s < arguments.length; s++) {
+            (n = arguments[s]), (r = i(Object(n)));
+            for (var c = 0; c < r.length; c++) u[r[c]] = n[r[c]];
           }
           return u;
         };
@@ -326,8 +326,8 @@
         n.d(t, 'default', function () {
           return be;
         });
-      var o = n(0),
-        r = n.n(o),
+      var r = n(0),
+        o = n.n(r),
         i = (n(1), n(2)),
         u = n.n(i),
         s = n(3),
@@ -353,15 +353,15 @@
         var n =
           arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [];
         if (e === t) return !1;
-        var o = Object.keys(e),
-          r = Object.keys(t);
-        if (o.length !== r.length) return !0;
+        var r = Object.keys(e),
+          o = Object.keys(t);
+        if (r.length !== o.length) return !0;
         var i,
           u,
           s = {};
         for (i = 0, u = n.length; i < u; i++) s[n[i]] = !0;
-        for (i = 0, u = o.length; i < u; i++) {
-          var c = o[i],
+        for (i = 0, u = r.length; i < u; i++) {
+          var c = r[i],
             a = e[c],
             l = t[c];
           if (a !== l) {
@@ -405,11 +405,11 @@
       }
       function d(e, t) {
         for (var n = 0; n < t.length; n++) {
-          var o = t[n];
-          (o.enumerable = o.enumerable || !1),
-            (o.configurable = !0),
-            'value' in o && (o.writable = !0),
-            Object.defineProperty(e, o.key, o);
+          var r = t[n];
+          (r.enumerable = r.enumerable || !1),
+            (r.configurable = !0),
+            'value' in r && (r.writable = !0),
+            Object.defineProperty(e, r.key, r);
         }
       }
       function y(e, t) {
@@ -437,11 +437,11 @@
         })();
         return function () {
           var n,
-            o = b(e);
+            r = b(e);
           if (t) {
-            var r = b(this).constructor;
-            n = Reflect.construct(o, arguments, r);
-          } else n = o.apply(this, arguments);
+            var o = b(this).constructor;
+            n = Reflect.construct(r, arguments, o);
+          } else n = r.apply(this, arguments);
           return v(this, n);
         };
       }
@@ -476,7 +476,7 @@
         })(u, e);
         var t,
           n,
-          o,
+          r,
           i = m(u);
         function u() {
           return h(this, u), i.apply(this, arguments);
@@ -496,23 +496,23 @@
                 var e = this.props,
                   t = e.section,
                   n = e.renderSectionTitle,
-                  o = e.theme,
+                  r = e.theme,
                   i = e.sectionKeyPrefix,
                   u = n(t);
                 return u
-                  ? r.a.createElement(
+                  ? o.a.createElement(
                       'div',
-                      o(''.concat(i, 'title'), 'sectionTitle'),
+                      r(''.concat(i, 'title'), 'sectionTitle'),
                       u
                     )
                   : null;
               },
             },
           ]) && d(t.prototype, n),
-          o && d(t, o),
+          r && d(t, r),
           u
         );
-      })(o.Component);
+      })(r.Component);
       function O(e) {
         return (O =
           'function' == typeof Symbol && 'symbol' == typeof Symbol.iterator
@@ -534,8 +534,8 @@
           function (e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = arguments[t];
-              for (var o in n)
-                Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o]);
+              for (var r in n)
+                Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
             }
             return e;
           }).apply(this, arguments);
@@ -543,38 +543,38 @@
       function w(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var o = Object.getOwnPropertySymbols(e);
+          var r = Object.getOwnPropertySymbols(e);
           t &&
-            (o = o.filter(function (t) {
+            (r = r.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable;
             })),
-            n.push.apply(n, o);
+            n.push.apply(n, r);
         }
         return n;
       }
       function j(e, t) {
         if (null == e) return {};
         var n,
-          o,
-          r = (function (e, t) {
+          r,
+          o = (function (e, t) {
             if (null == e) return {};
             var n,
-              o,
-              r = {},
+              r,
+              o = {},
               i = Object.keys(e);
-            for (o = 0; o < i.length; o++)
-              (n = i[o]), t.indexOf(n) >= 0 || (r[n] = e[n]);
-            return r;
+            for (r = 0; r < i.length; r++)
+              (n = i[r]), t.indexOf(n) >= 0 || (o[n] = e[n]);
+            return o;
           })(e, t);
         if (Object.getOwnPropertySymbols) {
           var i = Object.getOwnPropertySymbols(e);
-          for (o = 0; o < i.length; o++)
-            (n = i[o]),
+          for (r = 0; r < i.length; r++)
+            (n = i[r]),
               t.indexOf(n) >= 0 ||
                 (Object.prototype.propertyIsEnumerable.call(e, n) &&
-                  (r[n] = e[n]));
+                  (o[n] = e[n]));
         }
-        return r;
+        return o;
       }
       function P(e, t) {
         if (!(e instanceof t))
@@ -582,11 +582,11 @@
       }
       function x(e, t) {
         for (var n = 0; n < t.length; n++) {
-          var o = t[n];
-          (o.enumerable = o.enumerable || !1),
-            (o.configurable = !0),
-            'value' in o && (o.writable = !0),
-            Object.defineProperty(e, o.key, o);
+          var r = t[n];
+          (r.enumerable = r.enumerable || !1),
+            (r.configurable = !0),
+            'value' in r && (r.writable = !0),
+            Object.defineProperty(e, r.key, r);
         }
       }
       function _(e, t) {
@@ -614,11 +614,11 @@
         })();
         return function () {
           var n,
-            o = E(e);
+            r = E(e);
           if (t) {
-            var r = E(this).constructor;
-            n = Reflect.construct(o, arguments, r);
-          } else n = o.apply(this, arguments);
+            var o = E(this).constructor;
+            n = Reflect.construct(r, arguments, o);
+          } else n = r.apply(this, arguments);
           return k(this, n);
         };
       }
@@ -666,13 +666,13 @@
         })(u, e);
         var t,
           n,
-          o,
+          r,
           i = C(u);
         function u() {
           var e;
           P(this, u);
-          for (var t = arguments.length, n = new Array(t), o = 0; o < t; o++)
-            n[o] = arguments[o];
+          for (var t = arguments.length, n = new Array(t), r = 0; r < t; r++)
+            n[r] = arguments[r];
           return (
             R(
               D((e = i.call.apply(i, [this].concat(n)))),
@@ -683,27 +683,27 @@
             ),
             R(D(e), 'onMouseEnter', function (t) {
               var n = e.props,
-                o = n.sectionIndex,
-                r = n.itemIndex;
-              e.props.onMouseEnter(t, { sectionIndex: o, itemIndex: r });
+                r = n.sectionIndex,
+                o = n.itemIndex;
+              e.props.onMouseEnter(t, { sectionIndex: r, itemIndex: o });
             }),
             R(D(e), 'onMouseLeave', function (t) {
               var n = e.props,
-                o = n.sectionIndex,
-                r = n.itemIndex;
-              e.props.onMouseLeave(t, { sectionIndex: o, itemIndex: r });
+                r = n.sectionIndex,
+                o = n.itemIndex;
+              e.props.onMouseLeave(t, { sectionIndex: r, itemIndex: o });
             }),
             R(D(e), 'onMouseDown', function (t) {
               var n = e.props,
-                o = n.sectionIndex,
-                r = n.itemIndex;
-              e.props.onMouseDown(t, { sectionIndex: o, itemIndex: r });
+                r = n.sectionIndex,
+                o = n.itemIndex;
+              e.props.onMouseDown(t, { sectionIndex: r, itemIndex: o });
             }),
             R(D(e), 'onClick', function (t) {
               var n = e.props,
-                o = n.sectionIndex,
-                r = n.itemIndex;
-              e.props.onClick(t, { sectionIndex: o, itemIndex: r });
+                r = n.sectionIndex,
+                o = n.itemIndex;
+              e.props.onClick(t, { sectionIndex: r, itemIndex: o });
             }),
             e
           );
@@ -723,7 +723,7 @@
                 var e = this.props,
                   t = e.isHighlighted,
                   n = e.item,
-                  o = e.renderItem,
+                  r = e.renderItem,
                   i = e.renderItemData,
                   u = j(e, [
                     'isHighlighted',
@@ -741,10 +741,10 @@
                   'function' == typeof u.onMouseDown &&
                     (u.onMouseDown = this.onMouseDown),
                   'function' == typeof u.onClick && (u.onClick = this.onClick),
-                  r.a.createElement(
+                  o.a.createElement(
                     'li',
                     I({ role: 'option' }, u, { ref: this.storeItemReference }),
-                    o(
+                    r(
                       n,
                       (function (e) {
                         for (var t = 1; t < arguments.length; t++) {
@@ -774,10 +774,10 @@
               },
             },
           ]) && x(t.prototype, n),
-          o && x(t, o),
+          r && x(t, r),
           u
         );
-      })(o.Component);
+      })(r.Component);
       function M(e) {
         return (M =
           'function' == typeof Symbol && 'symbol' == typeof Symbol.iterator
@@ -799,8 +799,8 @@
           function (e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = arguments[t];
-              for (var o in n)
-                Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o]);
+              for (var r in n)
+                Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
             }
             return e;
           }).apply(this, arguments);
@@ -808,12 +808,12 @@
       function F(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var o = Object.getOwnPropertySymbols(e);
+          var r = Object.getOwnPropertySymbols(e);
           t &&
-            (o = o.filter(function (t) {
+            (r = r.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable;
             })),
-            n.push.apply(n, o);
+            n.push.apply(n, r);
         }
         return n;
       }
@@ -842,11 +842,11 @@
       }
       function L(e, t) {
         for (var n = 0; n < t.length; n++) {
-          var o = t[n];
-          (o.enumerable = o.enumerable || !1),
-            (o.configurable = !0),
-            'value' in o && (o.writable = !0),
-            Object.defineProperty(e, o.key, o);
+          var r = t[n];
+          (r.enumerable = r.enumerable || !1),
+            (r.configurable = !0),
+            'value' in r && (r.writable = !0),
+            Object.defineProperty(e, r.key, r);
         }
       }
       function B(e, t) {
@@ -874,11 +874,11 @@
         })();
         return function () {
           var n,
-            o = N(e);
+            r = N(e);
           if (t) {
-            var r = N(this).constructor;
-            n = Reflect.construct(o, arguments, r);
-          } else n = o.apply(this, arguments);
+            var o = N(this).constructor;
+            n = Reflect.construct(r, arguments, o);
+          } else n = r.apply(this, arguments);
           return V(this, n);
         };
       }
@@ -926,13 +926,13 @@
         })(u, e);
         var t,
           n,
-          o,
+          r,
           i = q(u);
         function u() {
           var e;
           U(this, u);
-          for (var t = arguments.length, n = new Array(t), o = 0; o < t; o++)
-            n[o] = arguments[o];
+          for (var t = arguments.length, n = new Array(t), r = 0; r < t; r++)
+            n[r] = arguments[r];
           return (
             W(
               K((e = i.call.apply(i, [this].concat(n)))),
@@ -959,7 +959,7 @@
                 var e = this,
                   t = this.props,
                   n = t.items,
-                  o = t.itemProps,
+                  r = t.itemProps,
                   i = t.renderItem,
                   u = t.renderItemData,
                   s = t.sectionIndex,
@@ -968,8 +968,8 @@
                   l = t.theme,
                   g = t.keyPrefix,
                   f = null === s ? g : ''.concat(g, 'section-').concat(s, '-'),
-                  p = 'function' == typeof o;
-                return r.a.createElement(
+                  p = 'function' == typeof r;
+                return o.a.createElement(
                   'ul',
                   H(
                     { role: 'listbox' },
@@ -979,7 +979,7 @@
                     var g = 0 === n,
                       h = n === c,
                       d = ''.concat(f, 'item-').concat(n),
-                      y = p ? o({ sectionIndex: s, itemIndex: n }) : o,
+                      y = p ? r({ sectionIndex: s, itemIndex: n }) : r,
                       m = A(
                         A(
                           { id: a(s, n), 'aria-selected': h },
@@ -989,7 +989,7 @@
                       );
                     return (
                       h && (m.ref = e.storeHighlightedItemReference),
-                      r.a.createElement(
+                      o.a.createElement(
                         T,
                         H({}, m, {
                           sectionIndex: s,
@@ -1006,19 +1006,19 @@
               },
             },
           ]) && L(t.prototype, n),
-          o && L(t, o),
+          r && L(t, r),
           u
         );
-      })(o.Component);
+      })(r.Component);
       function Y(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var o = Object.getOwnPropertySymbols(e);
+          var r = Object.getOwnPropertySymbols(e);
           t &&
-            (o = o.filter(function (t) {
+            (r = r.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable;
             })),
-            n.push.apply(n, o);
+            n.push.apply(n, r);
         }
         return n;
       }
@@ -1027,7 +1027,7 @@
           var n = null != arguments[t] ? arguments[t] : {};
           t % 2
             ? Y(Object(n), !0).forEach(function (t) {
-                re(e, t, n[t]);
+                oe(e, t, n[t]);
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n))
@@ -1050,23 +1050,23 @@
             if ('undefined' == typeof Symbol || !(Symbol.iterator in Object(e)))
               return;
             var n = [],
-              o = !0,
-              r = !1,
+              r = !0,
+              o = !1,
               i = void 0;
             try {
               for (
                 var u, s = e[Symbol.iterator]();
-                !(o = (u = s.next()).done) &&
+                !(r = (u = s.next()).done) &&
                 (n.push(u.value), !t || n.length !== t);
-                o = !0
+                r = !0
               );
             } catch (e) {
-              (r = !0), (i = e);
+              (o = !0), (i = e);
             } finally {
               try {
-                o || null == s.return || s.return();
+                r || null == s.return || s.return();
               } finally {
-                if (r) throw i;
+                if (o) throw i;
               }
             }
             return n;
@@ -1092,8 +1092,8 @@
       }
       function G(e, t) {
         (null == t || t > e.length) && (t = e.length);
-        for (var n = 0, o = new Array(t); n < t; n++) o[n] = e[n];
-        return o;
+        for (var n = 0, r = new Array(t); n < t; n++) r[n] = e[n];
+        return r;
       }
       function J(e) {
         return (J =
@@ -1112,11 +1112,11 @@
       }
       function X(e, t) {
         for (var n = 0; n < t.length; n++) {
-          var o = t[n];
-          (o.enumerable = o.enumerable || !1),
-            (o.configurable = !0),
-            'value' in o && (o.writable = !0),
-            Object.defineProperty(e, o.key, o);
+          var r = t[n];
+          (r.enumerable = r.enumerable || !1),
+            (r.configurable = !0),
+            'value' in r && (r.writable = !0),
+            Object.defineProperty(e, r.key, r);
         }
       }
       function Z(e, t) {
@@ -1144,11 +1144,11 @@
         })();
         return function () {
           var n,
-            o = oe(e);
+            r = re(e);
           if (t) {
-            var r = oe(this).constructor;
-            n = Reflect.construct(o, arguments, r);
-          } else n = o.apply(this, arguments);
+            var o = re(this).constructor;
+            n = Reflect.construct(r, arguments, o);
+          } else n = r.apply(this, arguments);
           return te(this, n);
         };
       }
@@ -1162,14 +1162,14 @@
           );
         return e;
       }
-      function oe(e) {
-        return (oe = Object.setPrototypeOf
+      function re(e) {
+        return (re = Object.setPrototypeOf
           ? Object.getPrototypeOf
           : function (e) {
               return e.__proto__ || Object.getPrototypeOf(e);
             })(e);
       }
-      function re(e, t, n) {
+      function oe(e, t, n) {
         return (
           t in e
             ? Object.defineProperty(e, t, {
@@ -1197,7 +1197,7 @@
           })(u, e);
           var t,
             n,
-            o,
+            r,
             i = ee(u);
           function u(e) {
             var t;
@@ -1206,7 +1206,7 @@
                 if (!(e instanceof t))
                   throw new TypeError('Cannot call a class as a function');
               })(this, u),
-              re(ne((t = i.call(this, e))), 'storeInputReference', function (
+              oe(ne((t = i.call(this, e))), 'storeInputReference', function (
                 e
               ) {
                 null !== e && (t.input = e);
@@ -1218,49 +1218,49 @@
                       Object.prototype.hasOwnProperty.call(n, 'current') &&
                       (n.current = e));
               }),
-              re(ne(t), 'storeItemsContainerReference', function (e) {
+              oe(ne(t), 'storeItemsContainerReference', function (e) {
                 null !== e && (t.itemsContainer = e);
               }),
-              re(ne(t), 'onHighlightedItemChange', function (e) {
+              oe(ne(t), 'onHighlightedItemChange', function (e) {
                 t.highlightedItem = e;
               }),
-              re(ne(t), 'getItemId', function (e, n) {
+              oe(ne(t), 'getItemId', function (e, n) {
                 if (null === n) return null;
-                var o = t.props.id,
-                  r = null === e ? '' : 'section-'.concat(e);
+                var r = t.props.id,
+                  o = null === e ? '' : 'section-'.concat(e);
                 return 'react-autowhatever-'
-                  .concat(o, '-')
-                  .concat(r, '-item-')
+                  .concat(r, '-')
+                  .concat(o, '-item-')
                   .concat(n);
               }),
-              re(ne(t), 'onFocus', function (e) {
+              oe(ne(t), 'onFocus', function (e) {
                 var n = t.props.inputProps;
                 t.setState({ isInputFocused: !0 }), n.onFocus && n.onFocus(e);
               }),
-              re(ne(t), 'onBlur', function (e) {
+              oe(ne(t), 'onBlur', function (e) {
                 var n = t.props.inputProps;
                 t.setState({ isInputFocused: !1 }), n.onBlur && n.onBlur(e);
               }),
-              re(ne(t), 'onKeyDown', function (e) {
+              oe(ne(t), 'onKeyDown', function (e) {
                 var n = t.props,
-                  o = n.inputProps,
-                  r = n.highlightedSectionIndex,
+                  r = n.inputProps,
+                  o = n.highlightedSectionIndex,
                   i = n.highlightedItemIndex;
                 switch (e.key) {
                   case 'ArrowDown':
                   case 'ArrowUp':
                     var u = 'ArrowDown' === e.key ? 'next' : 'prev',
-                      s = z(t.sectionIterator[u]([r, i]), 2),
+                      s = z(t.sectionIterator[u]([o, i]), 2),
                       c = s[0],
                       a = s[1];
-                    o.onKeyDown(e, {
+                    r.onKeyDown(e, {
                       newHighlightedSectionIndex: c,
                       newHighlightedItemIndex: a,
                     });
                     break;
                   default:
-                    o.onKeyDown(e, {
-                      highlightedSectionIndex: r,
+                    r.onKeyDown(e, {
+                      highlightedSectionIndex: o,
                       highlightedItemIndex: i,
                     });
                 }
@@ -1341,7 +1341,7 @@
                   if (this.allSectionsAreEmpty) return null;
                   var t = this.theme,
                     n = this.props,
-                    o = n.id,
+                    r = n.id,
                     i = n.items,
                     u = n.renderItem,
                     s = n.renderItemData,
@@ -1350,23 +1350,23 @@
                     l = n.highlightedItemIndex,
                     g = n.itemProps;
                   return i.map(function (n, i) {
-                    var f = 'react-autowhatever-'.concat(o, '-'),
+                    var f = 'react-autowhatever-'.concat(r, '-'),
                       p = ''.concat(f, 'section-').concat(i, '-'),
                       h = 0 === i;
-                    return r.a.createElement(
+                    return o.a.createElement(
                       'div',
                       t(
                         ''.concat(p, 'container'),
                         'sectionContainer',
                         h && 'sectionContainerFirst'
                       ),
-                      r.a.createElement(S, {
+                      o.a.createElement(S, {
                         section: n,
                         renderSectionTitle: c,
                         theme: t,
                         sectionKeyPrefix: p,
                       }),
-                      r.a.createElement(Q, {
+                      o.a.createElement(Q, {
                         items: e.sectionsItems[i],
                         itemProps: g,
                         renderItem: u,
@@ -1390,13 +1390,13 @@
                   if (0 === e.length) return null;
                   var t = this.theme,
                     n = this.props,
-                    o = n.id,
+                    r = n.id,
                     i = n.renderItem,
                     u = n.renderItemData,
                     s = n.highlightedSectionIndex,
                     c = n.highlightedItemIndex,
                     a = n.itemProps;
-                  return r.a.createElement(Q, {
+                  return o.a.createElement(Q, {
                     items: e,
                     itemProps: a,
                     renderItem: i,
@@ -1405,7 +1405,7 @@
                     onHighlightedItemChange: this.onHighlightedItemChange,
                     getItemId: this.getItemId,
                     theme: t,
-                    keyPrefix: 'react-autowhatever-'.concat(o, '-'),
+                    keyPrefix: 'react-autowhatever-'.concat(r, '-'),
                   });
                 },
               },
@@ -1419,12 +1419,12 @@
                         e.offsetParent === t
                           ? e.offsetTop
                           : e.offsetTop - t.offsetTop,
-                      o = t.scrollTop;
-                    n < o
-                      ? (o = n)
-                      : n + e.offsetHeight > o + t.offsetHeight &&
-                        (o = n + e.offsetHeight - t.offsetHeight),
-                      o !== t.scrollTop && (t.scrollTop = o);
+                      r = t.scrollTop;
+                    n < r
+                      ? (r = n)
+                      : n + e.offsetHeight > r + t.offsetHeight &&
+                        (r = n + e.offsetHeight - t.offsetHeight),
+                      r !== t.scrollTop && (t.scrollTop = r);
                   }
                 },
               },
@@ -1434,13 +1434,13 @@
                   var e = this.theme,
                     t = this.props,
                     n = t.id,
-                    o = t.multiSection,
+                    r = t.multiSection,
                     i = t.renderInputComponent,
                     u = t.renderItemsContainer,
                     s = t.highlightedSectionIndex,
                     c = t.highlightedItemIndex,
                     a = this.state.isInputFocused,
-                    l = o ? this.renderSections() : this.renderItems(),
+                    l = r ? this.renderSections() : this.renderItems(),
                     g = null !== l,
                     f = this.getItemId(s, c),
                     p = 'react-autowhatever-'.concat(n),
@@ -1451,7 +1451,7 @@
                           'aria-haspopup': 'listbox',
                           'aria-owns': p,
                           'aria-controls': p,
-                          'aria-expanded': g,
+                          'aria-expanded': g || 'false',
                         },
                         e(
                           'react-autowhatever-'.concat(n, '-container'),
@@ -1507,24 +1507,24 @@
                       ),
                       children: l,
                     });
-                  return r.a.createElement('div', h, d, y);
+                  return o.a.createElement('div', h, d, y);
                 },
               },
             ]) && X(t.prototype, n),
-            o && X(t, o),
+            r && X(t, r),
             u
           );
-        })(o.Component);
-      re(ue, 'defaultProps', {
+        })(r.Component);
+      oe(ue, 'defaultProps', {
         id: '1',
         multiSection: !1,
         renderInputComponent: function (e) {
-          return r.a.createElement('input', e);
+          return o.a.createElement('input', e);
         },
         renderItemsContainer: function (e) {
           var t = e.containerProps,
             n = e.children;
-          return r.a.createElement('div', t, n);
+          return o.a.createElement('div', t, n);
         },
         renderItem: function () {
           throw new Error('`renderItem` must be provided');
@@ -1604,12 +1604,12 @@
       function ae(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var o = Object.getOwnPropertySymbols(e);
+          var r = Object.getOwnPropertySymbols(e);
           t &&
-            (o = o.filter(function (t) {
+            (r = r.filter(function (t) {
               return Object.getOwnPropertyDescriptor(e, t).enumerable;
             })),
-            n.push.apply(n, o);
+            n.push.apply(n, r);
         }
         return n;
       }
@@ -1634,11 +1634,11 @@
       }
       function ge(e, t) {
         for (var n = 0; n < t.length; n++) {
-          var o = t[n];
-          (o.enumerable = o.enumerable || !1),
-            (o.configurable = !0),
-            'value' in o && (o.writable = !0),
-            Object.defineProperty(e, o.key, o);
+          var r = t[n];
+          (r.enumerable = r.enumerable || !1),
+            (r.configurable = !0),
+            'value' in r && (r.writable = !0),
+            Object.defineProperty(e, r.key, r);
         }
       }
       function fe(e, t) {
@@ -1666,11 +1666,11 @@
         })();
         return function () {
           var n,
-            o = ye(e);
+            r = ye(e);
           if (t) {
-            var r = ye(this).constructor;
-            n = Reflect.construct(o, arguments, r);
-          } else n = o.apply(this, arguments);
+            var o = ye(this).constructor;
+            n = Reflect.construct(r, arguments, o);
+          } else n = r.apply(this, arguments);
           return he(this, n);
         };
       }
@@ -1720,7 +1720,7 @@
           })(s, e);
           var t,
             n,
-            o,
+            r,
             i = pe(s);
           function s(e) {
             var t,
@@ -1751,9 +1751,9 @@
                 null !== e && (t.autowhatever = e);
               }),
               me(de(t), 'onSuggestionMouseEnter', function (e, n) {
-                var o = n.sectionIndex,
-                  r = n.itemIndex;
-                t.updateHighlightedSuggestion(o, r),
+                var r = n.sectionIndex,
+                  o = n.itemIndex;
+                t.updateHighlightedSuggestion(r, o),
                   e.target === t.pressedSuggestion &&
                     (t.justSelectedSuggestion = !0),
                   (t.justMouseEntered = !0),
@@ -1783,12 +1783,12 @@
                 e && e();
               }),
               me(de(t), 'onSuggestionSelected', function (e, n) {
-                var o = t.props,
-                  r = o.alwaysRenderSuggestions,
-                  i = o.onSuggestionSelected,
-                  u = o.onSuggestionsFetchRequested;
+                var r = t.props,
+                  o = r.alwaysRenderSuggestions,
+                  i = r.onSuggestionSelected,
+                  u = r.onSuggestionsFetchRequested;
                 i && i(e, n),
-                  r
+                  o
                     ? u({
                         value: n.suggestionValue,
                         reason: 'suggestion-selected',
@@ -1798,8 +1798,8 @@
               }),
               me(de(t), 'onSuggestionClick', function (e) {
                 var n = t.props,
-                  o = n.alwaysRenderSuggestions,
-                  r = n.focusInputOnSuggestionClick,
+                  r = n.alwaysRenderSuggestions,
+                  o = n.focusInputOnSuggestionClick,
                   i = t.getSuggestionIndices(t.findSuggestionElement(e.target)),
                   u = i.sectionIndex,
                   s = i.suggestionIndex,
@@ -1813,8 +1813,8 @@
                     sectionIndex: u,
                     method: 'click',
                   }),
-                  o || t.closeSuggestions(),
-                  !0 === r ? t.input.focus() : t.onBlur(),
+                  r || t.closeSuggestions(),
+                  !0 === o ? t.input.focus() : t.onBlur(),
                   setTimeout(function () {
                     t.justSelectedSuggestion = !1;
                   });
@@ -1822,11 +1822,11 @@
               me(de(t), 'onBlur', function () {
                 var e = t.props,
                   n = e.inputProps,
-                  o = e.shouldRenderSuggestions,
-                  r = n.value,
+                  r = e.shouldRenderSuggestions,
+                  o = n.value,
                   i = n.onBlur,
                   u = t.getHighlightedSuggestion(),
-                  s = o(r);
+                  s = r(o);
                 t.setState({
                   isFocused: !1,
                   highlightedSectionIndex: null,
@@ -1865,10 +1865,10 @@
               }),
               me(de(t), 'renderSuggestionsContainer', function (e) {
                 var n = e.containerProps,
-                  o = e.children;
+                  r = e.children;
                 return (0,
                 t.props
-                  .renderSuggestionsContainer)({ containerProps: n, children: o, query: t.getQuery() });
+                  .renderSuggestionsContainer)({ containerProps: n, children: r, query: t.getQuery() });
               }),
               (t.state = {
                 isFocused: !1,
@@ -1922,14 +1922,14 @@
                 key: 'componentDidUpdate',
                 value: function (e, t) {
                   var n = this.props,
-                    o = n.suggestions,
-                    r = n.onSuggestionHighlighted,
+                    r = n.suggestions,
+                    o = n.onSuggestionHighlighted,
                     i = n.highlightFirstSuggestion;
-                  if (!u()(o, e.suggestions) && o.length > 0 && i)
+                  if (!u()(r, e.suggestions) && r.length > 0 && i)
                     this.highlightFirstSuggestion();
-                  else if (r) {
+                  else if (o) {
                     var s = this.getHighlightedSuggestion();
-                    s != t.highlightedSuggestion && r({ suggestion: s });
+                    s != t.highlightedSuggestion && o({ suggestion: s });
                   }
                 },
               },
@@ -1949,9 +1949,9 @@
               {
                 key: 'updateHighlightedSuggestion',
                 value: function (e, t, n) {
-                  var o = this;
-                  this.setState(function (r) {
-                    var i = r.valueBeforeUpDown;
+                  var r = this;
+                  this.setState(function (o) {
+                    var i = o.valueBeforeUpDown;
                     return (
                       null === t
                         ? (i = null)
@@ -1960,7 +1960,7 @@
                         highlightedSectionIndex: e,
                         highlightedSuggestionIndex: t,
                         highlightedSuggestion:
-                          null === t ? null : o.getSuggestion(e, t),
+                          null === t ? null : r.getSuggestion(e, t),
                         valueBeforeUpDown: i,
                       }
                     );
@@ -2006,10 +2006,10 @@
                 key: 'getSuggestion',
                 value: function (e, t) {
                   var n = this.props,
-                    o = n.suggestions,
-                    r = n.multiSection,
+                    r = n.suggestions,
+                    o = n.multiSection,
                     i = n.getSectionSuggestions;
-                  return r ? i(o[e])[t] : o[t];
+                  return o ? i(r[e])[t] : r[t];
                 },
               },
               {
@@ -2061,10 +2061,10 @@
               {
                 key: 'maybeCallOnChange',
                 value: function (e, t, n) {
-                  var o = this.props.inputProps,
-                    r = o.value,
-                    i = o.onChange;
-                  t !== r && i(e, { newValue: t, method: n });
+                  var r = this.props.inputProps,
+                    o = r.value,
+                    i = r.onChange;
+                  t !== o && i(e, { newValue: t, method: n });
                 },
               },
               {
@@ -2072,9 +2072,9 @@
                 value: function (e) {
                   var t = e.suggestions,
                     n = e.inputProps,
-                    o = e.shouldRenderSuggestions,
-                    r = n.value;
-                  return t.length > 0 && o(r);
+                    r = e.shouldRenderSuggestions,
+                    o = n.value;
+                  return t.length > 0 && r(o);
                 },
               },
               {
@@ -2091,7 +2091,7 @@
                   var e = this,
                     t = this.props,
                     n = t.suggestions,
-                    o = t.renderInputComponent,
+                    r = t.renderInputComponent,
                     i = t.onSuggestionsFetchRequested,
                     u = t.renderSuggestion,
                     s = t.inputProps,
@@ -2102,21 +2102,22 @@
                     f = t.theme,
                     p = t.getSuggestionValue,
                     h = t.alwaysRenderSuggestions,
-                    d = t.highlightFirstSuggestion,
-                    y = this.state,
-                    m = y.isFocused,
-                    v = y.isCollapsed,
-                    b = y.highlightedSectionIndex,
-                    S = y.highlightedSuggestionIndex,
-                    O = y.valueBeforeUpDown,
-                    I = h ? ve : this.props.shouldRenderSuggestions,
-                    w = s.value,
-                    j = s.onFocus,
-                    P = s.onKeyDown,
-                    x = this.willRenderSuggestions(this.props),
-                    _ = h || (m && !v && x),
-                    C = _ ? n : [],
-                    k = le(
+                    d = t.ariaLabel,
+                    y = t.highlightFirstSuggestion,
+                    m = this.state,
+                    v = m.isFocused,
+                    b = m.isCollapsed,
+                    S = m.highlightedSectionIndex,
+                    O = m.highlightedSuggestionIndex,
+                    I = m.valueBeforeUpDown,
+                    w = h ? ve : this.props.shouldRenderSuggestions,
+                    j = s.value,
+                    P = s.onFocus,
+                    x = s.onKeyDown,
+                    _ = this.willRenderSuggestions(this.props),
+                    C = h || (v && !b && _),
+                    k = C ? n : [],
+                    D = le(
                       le({}, s),
                       {},
                       {
@@ -2125,10 +2126,10 @@
                             !e.justSelectedSuggestion &&
                             !e.justClickedOnSuggestionsContainer
                           ) {
-                            var n = I(w);
+                            var n = w(j);
                             e.setState({ isFocused: !0, isCollapsed: !n }),
-                              j && j(t),
-                              n && i({ value: w, reason: 'input-focused' });
+                              P && P(t),
+                              n && i({ value: j, reason: 'input-focused' });
                           }
                         },
                         onBlur: function (t) {
@@ -2140,7 +2141,7 @@
                         },
                         onChange: function (t) {
                           var n = t.target.value,
-                            o = I(n);
+                            r = w(n);
                           e.maybeCallOnChange(t, n, 'type'),
                             e.suggestionsContainer &&
                               (e.suggestionsContainer.scrollTop = 0),
@@ -2148,7 +2149,7 @@
                               le(
                                 le(
                                   {},
-                                  d
+                                  y
                                     ? {}
                                     : {
                                         highlightedSectionIndex: null,
@@ -2157,40 +2158,40 @@
                                       }
                                 ),
                                 {},
-                                { valueBeforeUpDown: null, isCollapsed: !o }
+                                { valueBeforeUpDown: null, isCollapsed: !r }
                               )
                             ),
-                            o
+                            r
                               ? i({ value: n, reason: 'input-changed' })
                               : e.onSuggestionsClearRequested();
                         },
-                        onKeyDown: function (t, o) {
-                          var r = t.keyCode;
-                          switch (r) {
+                        onKeyDown: function (t, r) {
+                          var o = t.keyCode;
+                          switch (o) {
                             case 40:
                             case 38:
-                              if (v)
-                                I(w) &&
+                              if (b)
+                                w(j) &&
                                   (i({
-                                    value: w,
+                                    value: j,
                                     reason: 'suggestions-revealed',
                                   }),
                                   e.revealSuggestions());
                               else if (n.length > 0) {
                                 var u,
-                                  s = o.newHighlightedSectionIndex,
-                                  c = o.newHighlightedItemIndex;
+                                  s = r.newHighlightedSectionIndex,
+                                  c = r.newHighlightedItemIndex;
                                 (u =
                                   null === c
-                                    ? null === O
-                                      ? w
-                                      : O
+                                    ? null === I
+                                      ? j
+                                      : I
                                     : e.getSuggestionValueByIndex(s, c)),
-                                  e.updateHighlightedSuggestion(s, c, w),
+                                  e.updateHighlightedSuggestion(s, c, j),
                                   e.maybeCallOnChange(
                                     t,
                                     u,
-                                    40 === r ? 'down' : 'up'
+                                    40 === o ? 'down' : 'up'
                                   );
                               }
                               t.preventDefault(),
@@ -2203,15 +2204,15 @@
                               if (229 === t.keyCode) break;
                               var a = e.getHighlightedSuggestion();
                               if (
-                                (_ && !h && e.closeSuggestions(), null != a)
+                                (C && !h && e.closeSuggestions(), null != a)
                               ) {
                                 var l = p(a);
                                 e.maybeCallOnChange(t, l, 'enter'),
                                   e.onSuggestionSelected(t, {
                                     suggestion: a,
                                     suggestionValue: l,
-                                    suggestionIndex: S,
-                                    sectionIndex: b,
+                                    suggestionIndex: O,
+                                    sectionIndex: S,
                                     method: 'enter',
                                   }),
                                   (e.justSelectedSuggestion = !0),
@@ -2221,54 +2222,55 @@
                               }
                               break;
                             case 27:
-                              _ && t.preventDefault();
-                              var g = _ && !h;
-                              null === O
+                              C && t.preventDefault();
+                              var g = C && !h;
+                              null === I
                                 ? g ||
                                   (e.maybeCallOnChange(t, '', 'escape'),
-                                  I('')
+                                  w('')
                                     ? i({ value: '', reason: 'escape-pressed' })
                                     : e.onSuggestionsClearRequested())
-                                : e.maybeCallOnChange(t, O, 'escape'),
+                                : e.maybeCallOnChange(t, I, 'escape'),
                                 g
                                   ? (e.onSuggestionsClearRequested(),
                                     e.closeSuggestions())
                                   : e.resetHighlightedSuggestion();
                           }
-                          P && P(t);
+                          x && x(t);
                         },
                       }
                     ),
-                    D = { query: this.getQuery() };
-                  return r.a.createElement(ue, {
+                    E = { query: this.getQuery() };
+                  return o.a.createElement(ue, {
                     multiSection: c,
-                    items: C,
-                    renderInputComponent: o,
+                    items: k,
+                    renderInputComponent: r,
                     renderItemsContainer: this.renderSuggestionsContainer,
                     renderItem: u,
-                    renderItemData: D,
+                    renderItemData: E,
                     renderSectionTitle: a,
                     getSectionItems: g,
-                    highlightedSectionIndex: b,
-                    highlightedItemIndex: S,
-                    inputProps: k,
+                    highlightedSectionIndex: S,
+                    highlightedItemIndex: O,
+                    inputProps: D,
                     itemProps: this.itemProps,
                     theme: se(f),
                     id: l,
+                    ariaLabel: d,
                     ref: this.storeAutowhateverRef,
                   });
                 },
               },
             ]) && ge(t.prototype, n),
-            o && ge(t, o),
+            r && ge(t, r),
             s
           );
-        })(o.Component);
+        })(r.Component);
       me(be, 'defaultProps', {
         renderSuggestionsContainer: function (e) {
           var t = e.containerProps,
             n = e.children;
-          return r.a.createElement('div', t, n);
+          return o.a.createElement('div', t, n);
         },
         shouldRenderSuggestions: function (e) {
           return e.trim().length > 0;
@@ -2294,6 +2296,7 @@
           sectionContainerFirst: 'react-autosuggest__section-container--first',
           sectionTitle: 'react-autosuggest__section-title',
         },
+        ariaLabel: 'search',
         id: '1',
       }),
         (be.propTypes = {});

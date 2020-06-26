@@ -388,7 +388,7 @@ export default class Autowhatever extends Component {
       'aria-haspopup': 'listbox',
       'aria-owns': itemsContainerId,
       'aria-controls': itemsContainerId,
-      'aria-expanded': isOpen,
+      'aria-expanded': isOpen || 'false',
       ...theme(
         `react-autowhatever-${id}-container`,
         'container',
